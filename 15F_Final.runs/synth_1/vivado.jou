@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Jan 29 20:02:47 2026
+# Process ID         : 5488
+# Current directory  : G:/15F/project_backup2/project_backup2.runs/synth_1
+# Command line       : vivado.exe -log Measure_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Measure_wrapper.tcl
+# Log file           : G:/15F/project_backup2/project_backup2.runs/synth_1/Measure_wrapper.vds
+# Journal file       : G:/15F/project_backup2/project_backup2.runs/synth_1\vivado.jou
+# Running On         : JoeyBoy-MagicBook
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 225H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 14
+# Host memory        : 33820 MB
+# Swap memory        : 21474 MB
+# Total Virtual      : 55294 MB
+# Available Virtual  : 17522 MB
+#-----------------------------------------------------------
+source Measure_wrapper.tcl -notrace

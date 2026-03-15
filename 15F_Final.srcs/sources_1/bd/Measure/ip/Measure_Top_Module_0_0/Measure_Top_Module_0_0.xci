@@ -1,0 +1,68 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "Measure_Top_Module_0_0",
+    "cell_name": "Top_Module_0",
+    "component_reference": "xilinx.com:module_ref:Top_Module:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../15F_Final.gen/sources_1/bd/Measure/ip/Measure_Top_Module_0_0",
+    "parameters": {
+      "component_parameters": {
+        "THRESHOLD": [ { "value": "6000", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "Component_Name": [ { "value": "Measure_Top_Module_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "THRESHOLD": [ { "value": "6000", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z035" } ],
+        "PACKAGE": [ { "value": "ffg900" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-2" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../15F_Final.gen/sources_1/bd/Measure/ip/Measure_Top_Module_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2025.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "clk_in": [ { "direction": "in" } ],
+        "rst_n": [ { "direction": "in" } ],
+        "signal_in": [ { "direction": "in" } ],
+        "signal_in2": [ { "direction": "in" } ],
+        "dataout": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "dutyout_high": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "dutyout_low": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "interval_data": [ { "direction": "out", "size_left": "31", "size_right": "0" } ]
+      },
+      "interfaces": {
+        "rst_n": {
+          "vlnv": "xilinx.com:signal:reset:1.0",
+          "abstraction_type": "xilinx.com:signal:reset_rtl:1.0",
+          "mode": "slave",
+          "parameters": {
+            "POLARITY": [ { "value": "ACTIVE_LOW", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
+            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
+          },
+          "port_maps": {
+            "RST": [ { "physical_name": "rst_n" } ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Thu Jan 29 20:08:57 2026
+| Host         : JoeyBoy-MagicBook running 64-bit major release  (build 9200)
+| Command      : report_methodology -file Measure_wrapper_methodology_drc_routed.rpt -pb Measure_wrapper_methodology_drc_routed.pb -rpx Measure_wrapper_methodology_drc_routed.rpx
+| Design       : Measure_wrapper
+| Device       : xc7z035ffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 1
++---------+----------+------------------------------+--------+
+| Rule    | Severity | Description                  | Checks |
++---------+----------+------------------------------+--------+
+| LUTAR-1 | Warning  | LUT drives async reset alert | 1      |
++---------+----------+------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/high_cnt_r_out[28]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) Measure_i/Top_Module_0/inst/u_interval_measure/measure_pulse_reg/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[23]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[24]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[25]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[26]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[27]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[28]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[2]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[3]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[4]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[5]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[6]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[7]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[8]/CLR,
+Measure_i/Top_Module_0/inst/u_interval_measure/u_interval_counter/l_cnt_tmp_reg[9]/CLR
+ (the first 15 of 88 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+
